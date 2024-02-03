@@ -57,7 +57,8 @@ class DBConnection:
             # Handle the exception as needed (e.g., logging, raising, etc.)
                 
     def create_table(self, table_name, columns:list[dict] | list[str]):
-        # print(table_name)
+        table_name = table_name.replace('-', '_')
+        print('createTable=================>', table_name)
         # print(columns)
         self.__create_db_connection()
 
@@ -94,6 +95,9 @@ class DBConnection:
             constraint (string, optional): comma separated constraint string. Defaults to None.
         """
         self.__create_db_connection()
+        print('============tablename===========', table_name)
+        print('============dataaaa===========', data)
+        print('============dfffff===========', df)
 
         with self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cursor:
             
@@ -112,6 +116,44 @@ class DBConnection:
                 psycopg2.extras.execute_values(cursor, query, values)
                 # psycopg2.extras.execute_values(cursor, query, values, template=None, page_size=100)
                 self.connection.commit()
+                print(f'Inserting {len(df)} rows into {table_name}')
+
+            except Exception as e:
+                logging.error(f"Query Execution {str(e)} :: Query: {query}")
+
+                print(traceback.format_exc())
+                print(str(e))
+                ...
+                
+     
+                
+                
+    def execute_bulk_query_update(self, table_name, data, df, constraint=None):
+
+        self.__create_db_connection()
+
+        with self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cursor:
+            
+            try:
+                columns = [column.replace(".", "_") for column in data[0].keys()]
+                for i in data:
+                    print('iiiiiiiiiiiiiii',i)
+                    
+                    query = f'''
+                    UPDATE {self.schema_name}.{table_name}
+                    SET sentiment = %s,
+                    classification = %s,
+                    WHERE id = '{i['id']}'
+                    '''
+                    if constraint:
+                        query += f'''ON CONFLICT ({constraint}) DO NOTHING'''
+                        print(query)
+                    update_values = [[i['sentiment']],[i['classification']]]
+                    print("update query=======",query)
+                    print("==update values===",update_values)
+                    # psycopg2.extras.execute_values(cursor, query, update_values)
+                    psycopg2.extras.execute_values(cursor, query, update_values, template=None, page_size=100)
+                # self.connection.commit()
                 print(f'Inserting {len(df)} rows into {table_name}')
 
             except Exception as e:

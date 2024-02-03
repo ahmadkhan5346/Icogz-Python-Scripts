@@ -48,6 +48,8 @@ class WorkingWithFiles:
 
         df.rename(columns=lambda s: s.replace("(", ""), inplace=True)
         df.rename(columns=lambda s: s.replace(")", ""), inplace=True)
+        
+        df.rename(columns=lambda s: s.replace("-", "_"), inplace=True)
 
         # replaces single or mulitple spaces with single underscore
         df.rename(columns=lambda x: re.sub(r'\s+', '_', x), inplace=True)
@@ -73,9 +75,11 @@ class WorkingWithFiles:
         # db_connection.create_table(table_name, list(df.columns))
 
         all_data = df.to_dict(orient='records')
-        # print(f'Inserting {len(df)} rows into {table_name}')
+        print(f'Inserting {len(df)} rows into {table_name}')
 
-        db_connection.execute_bulk_query(table_name, all_data, df, constraint=None)
+        # db_connection.execute_bulk_query(table_name, all_data, df, constraint=None)
+        
+        db_connection.execute_bulk_query_update(table_name, all_data, df, constraint=None)
 
 
 
@@ -86,6 +90,7 @@ class WorkingWithFiles:
         # record_count = 0
         for file in self.read_directory_and_return_list_of_files():
             table_name = file if not file_name_table_name_map_dict else file_name_table_name_map_dict.get("table_name")
+            
             df = self.get_df_for_file(file)
 
             # Change Column Names to match the formatting supported by database.
@@ -96,7 +101,8 @@ class WorkingWithFiles:
                     df.drop(column, axis=1, inplace=True)
             # print('df========64========>', df.info())
 
-            self.create_table_and_upload_data_using_df(db_connection, file, table_name, df)
+            self.create_table_and_upload_data_using_df(db_connection, file, table_name.replace('.xlsx', ''), df)
+            # self.create_table_and_upload_data_using_df(db_connection, file, table_name, df)
 
             # record_count += len(df)
 
