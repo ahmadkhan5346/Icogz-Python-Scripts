@@ -2,15 +2,15 @@ from db_utils import DBConnection
 from utils import WorkingWithFiles
 
 
-db_connection = DBConnection(
-    database_name= "enbd", user_name="icogz_rnd", password="^sSDDfmz]i3Ld", host="216.48.178.148",
-    port="5432", db_type="postgresql", schema_name="public"
-)
-
 # db_connection = DBConnection(
-#     database_name= "enbd", user_name="postgres", password="postgres", host="127.0.0.1",
+#     database_name= "enbd", user_name="icogz_rnd", password="^sSDDfmz]i3Ld", host="216.48.178.148",
 #     port="5432", db_type="postgresql", schema_name="public"
 # )
+
+db_connection = DBConnection(
+    database_name= "enbd", user_name="postgres", password="postgres", host="127.0.0.1",
+    port="5432", db_type="postgresql", schema_name="practice"
+)
 
 work_with_files = WorkingWithFiles("xlcsvdata")
 

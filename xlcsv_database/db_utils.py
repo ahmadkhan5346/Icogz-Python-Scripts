@@ -111,48 +111,10 @@ class DBConnection:
                     query += f'''ON CONFLICT ({constraint}) DO NOTHING'''
                     print(query)
                 values = [[value for value in each_data.values()] for each_data in data]
-                # print("test for query=======",query)
+                print("test for query=======",query)
                 # print("==test for values===",values)
                 psycopg2.extras.execute_values(cursor, query, values)
                 # psycopg2.extras.execute_values(cursor, query, values, template=None, page_size=100)
-                self.connection.commit()
-                print(f'Inserting {len(df)} rows into {table_name}')
-
-            except Exception as e:
-                logging.error(f"Query Execution {str(e)} :: Query: {query}")
-
-                print(traceback.format_exc())
-                print(str(e))
-                ...
-                
-     
-                
-                
-    def execute_bulk_query_update(self, table_name, data, df, constraint=None):
-
-        self.__create_db_connection()
-
-        with self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cursor:
-            
-            try:
-                columns = [column.replace(".", "_") for column in data[0].keys()]
-                for i in data:
-                    print('iiiiiiiiiiiiiii',i)
-                    
-                    query = f'''
-                    UPDATE {self.schema_name}.{table_name}
-                    SET sentiment = %s,
-                    classification = %s,
-                    WHERE id = '{i['id']}'
-                    '''
-                    if constraint:
-                        query += f'''ON CONFLICT ({constraint}) DO NOTHING'''
-                        print(query)
-                    update_values = [[i['sentiment']],[i['classification']]]
-                    print("update query=======",query)
-                    print("==update values===",update_values)
-                    # psycopg2.extras.execute_values(cursor, query, update_values)
-                    psycopg2.extras.execute_values(cursor, query, update_values, template=None, page_size=100)
                 # self.connection.commit()
                 print(f'Inserting {len(df)} rows into {table_name}')
 
@@ -162,4 +124,31 @@ class DBConnection:
                 print(traceback.format_exc())
                 print(str(e))
                 ...
-            
+                
+                
+                
+    def execute_bulk_query_update(self, table_name, data, df, constraint=None):
+        self.__create_db_connection()
+
+        with self.connection.cursor(cursor_factory=psycopg2.extras.RealDictCursor) as cursor:
+            try:
+                columns = [column.replace(".", "_") for column in data[0].keys()]
+                for i in data:
+                    set_clause = ', '.join([f"{column} = %s" for column in columns if column != 'id'])
+                    query = f'''
+                        UPDATE {self.schema_name}.{table_name} 
+                        SET {set_clause}
+                        WHERE id = '{i['id']}'
+                    '''
+
+                    if constraint:
+                        query += f' ON CONFLICT ({constraint}) DO NOTHING'
+
+                    update_values = [i['sentiment'], i['classification']]
+                    cursor.execute(query, update_values)
+                cursor.close()
+                print(f'Updating {len(df)} rows in {table_name}')
+
+            except Exception as e:
+                logging.error(f"Query Execution {str(e)} :: Query: {query}")
+                

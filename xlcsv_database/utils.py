@@ -75,7 +75,6 @@ class WorkingWithFiles:
         # db_connection.create_table(table_name, list(df.columns))
 
         all_data = df.to_dict(orient='records')
-        print(f'Inserting {len(df)} rows into {table_name}')
 
         # db_connection.execute_bulk_query(table_name, all_data, df, constraint=None)
         
