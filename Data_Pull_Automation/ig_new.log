@@ -1,0 +1,24 @@
+INFO:: 2023-12-05 18:35:31,193 - Insta Script Execution Started
+INFO:: 2023-12-05 18:37:40,338 - Insta Script Execution Ended
+INFO:: 2023-12-08 19:05:12,707 - Insta Script Execution Started
+INFO:: 2023-12-08 19:05:55,626 - Insta Script Execution Ended
+INFO:: 2024-01-18 16:43:32,489 - Insta Script Execution Started
+INFO:: 2024-01-18 16:43:57,933 - Insta Script Execution Started
+INFO:: 2024-01-18 16:44:10,005 - Insta Script Execution Ended
+INFO:: 2024-01-18 17:20:39,454 - Insta Script Execution Started
+INFO:: 2024-01-18 18:35:22,897 - Insta Script Execution Started
+INFO:: 2024-01-18 18:36:30,259 - Insta Script Execution Started
+INFO:: 2024-01-18 18:48:00,029 - Insta Script Execution Ended
+INFO:: 2024-02-07 17:33:48,624 - Insta Script Execution Started
+INFO:: 2024-02-07 17:40:25,121 - Insta Script Execution Started
+INFO:: 2024-02-07 17:43:06,644 - Insta Script Execution Ended
+INFO:: 2024-02-07 18:11:22,299 - Insta Script Execution Started
+INFO:: 2024-02-07 18:12:58,932 - Insta Script Execution Ended
+INFO:: 2024-02-07 18:26:10,381 - Insta Script Execution Started
+INFO:: 2024-02-08 10:47:34,575 - Insta Script Execution Started
+INFO:: 2024-02-08 10:50:11,720 - Insta Script Execution Started
+INFO:: 2024-02-08 11:06:13,701 - Insta Script Execution Started
+INFO:: 2024-02-08 11:11:48,489 - Insta Script Execution Started
+INFO:: 2024-02-08 11:15:15,643 - Insta Script Execution Started
+WARNING:: 2024-02-08 11:17:41,995 - Page Post Repose Empty from Supermetrics :: username: yapuae :: Instagram Link: https://www.instagram.com/yapuae/ :: SuperMetric URL: https://api.supermetrics.com/enterprise/v2/query/data/json?json={"ds_id": "IGPD2", "ds_accounts": "yapuae", "ds_user": "473260313847019", "start_date": "2023-09-01", "end_date": "2023-11-30", "fields": "dataSourceName,post_id,post_timestamp,post_type,post_media_url,post_permalink,post_caption,ig_id,username,name,biography,profile_picture_url,website,year,yearOfWeek,yearOfWeekIso,yearMonth,month,yearWeek,yearWeekIso,week,weekIso,dayOfMonth,dayOfWeekName,dayOfWeekNameIso,date,today,likes_per_post,comments_per_post,posts,post_comments,post_likes", "settings": {"report_type": "BusinessDiscoveryMedia", "timezone": "Asia/Dubai"}, "max_rows": 1000, "api_key": "api_1dK_S8j0F5ASCHjVEi4hLp7wdtTlGkI50tTX02AjhsXFL_J7GE9tkkc3llRz4KYQ1KhT95686aeCE26a3XiIlxmRmD_jP97cKJaH"}
+INFO:: 2024-02-08 11:17:41,995 - Insta Script Execution Ended

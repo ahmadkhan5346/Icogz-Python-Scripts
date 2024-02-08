@@ -1,0 +1,53 @@
+2023-12-06 15:44:30,261 file_cache is only supported with oauth2client<4.0.0
+2023-12-06 15:44:30,723 Refreshing due to a 401 (attempt 1/2)
+2023-12-06 15:44:30,723 Refreshing access_token
+2023-12-06 15:44:31,193 Data Fetching for channel :: UCMVM0aPIFiM8gcy9ijR4wJw :: DATE: 2023-12-05 :: PROFILE: ADCB
+2023-12-06 15:44:59,146 Data Fetching for channel :: UCvEhyYolfYxgPrlROsnopHw :: DATE: 2023-12-05 :: PROFILE: ADIB
+2023-12-06 15:45:32,559 Data Fetching for channel :: UCyXhrKqYwuvsvquPuqgSPrA :: DATE: 2023-12-05 :: PROFILE: First Abu Dhabi Bank (FAB)
+2023-12-06 15:46:05,389 Data Fetching for channel :: UCLVh31_N1g3VkQrTy2QAEbg :: DATE: 2023-12-05 :: PROFILE: Mashreq Bank
+2023-12-06 15:46:36,300 Data Fetching for channel :: UCUG4FKLsqj_yV1mid55AM4Q :: DATE: 2023-12-05 :: PROFILE: CBD
+2023-12-06 15:46:46,446 Data Fetching for channel :: UCecouTqjpZK0ztcWJNmr9Qg :: DATE: 2023-12-05 :: PROFILE: Citi
+2023-12-06 15:46:57,593 Data Fetching for channel :: UC0DEeXS14K4pnpDDGpwtnhg :: DATE: 2023-12-05 :: PROFILE: Dubai Islamic Bank (DIB)
+2023-12-06 15:47:20,350 Data Fetching for channel :: UCdrZqwAbeRNTTkDhZcuNQ3Q :: DATE: 2023-12-05 :: PROFILE: Emirates Islamic Bank
+2023-12-06 15:47:34,565 Data Fetching for channel :: UC11Gu7WzeYtZ4OUoV4GB34w :: DATE: 2023-12-05 :: PROFILE: Emirates NBD
+2023-12-06 15:48:05,578 Data Fetching for channel :: UC5yYfKu3AZdQMZpg_xzIEwQ :: DATE: 2023-12-05 :: PROFILE: Sharjah Islamic Bank (SIB)
+2023-12-06 15:48:24,503 Data Fetching for channel :: UCt27pLV-NXxl_pFjet5ylew :: DATE: 2023-12-05 :: PROFILE: HSBC
+2023-12-06 15:48:55,589 Data Fetching for channel :: UC4lRLKYmzVz3BcA26bp_83w :: DATE: 2023-12-05 :: PROFILE: Islamic Development bank
+2023-12-06 15:49:28,937 Data Fetching for channel :: UCg70VSOut4rA5_KFl-kMZJQ :: DATE: 2023-12-05 :: PROFILE: RAKBank
+2023-12-06 15:49:37,919 Data Fetching for channel :: UCQo6TgFj3dhZDpFVgm8_6Hg :: DATE: 2023-12-05 :: PROFILE: Standard Chartered Bank
+2023-12-06 15:49:56,118 Data Fetching for channel :: UCJh2iRDP5TdaZLCCWJVOLqQ :: DATE: 2023-12-05 :: PROFILE: Emirates Development Bank
+2023-12-08 19:13:14,014 file_cache is only supported with oauth2client<4.0.0
+2023-12-08 19:13:14,453 Refreshing due to a 401 (attempt 1/2)
+2023-12-08 19:13:14,455 Refreshing access_token
+2023-12-08 19:13:14,888 Data Fetching for channel :: UCxR5OIqFV3TKbLh03Ni1jxQ :: DATE: 2023-12-07 :: PROFILE: Jyotiraditya M. Scindia
+2023-12-08 19:13:47,272 Data Fetching for channel :: UC2-MHVaFAAmCdL5yTJolLSg :: DATE: 2023-12-07 :: PROFILE: Shivraj Singh Chouhan
+2023-12-08 19:16:48,085 file_cache is only supported with oauth2client<4.0.0
+2023-12-08 19:16:48,417 Refreshing due to a 401 (attempt 1/2)
+2023-12-08 19:16:48,417 Refreshing access_token
+2023-12-08 19:16:48,740 Data Fetching for channel :: UCxR5OIqFV3TKbLh03Ni1jxQ :: DATE: 2023-12-07 :: PROFILE: Jyotiraditya M. Scindia
+2023-12-08 19:16:48,868 Data Fetching for channel :: UC2-MHVaFAAmCdL5yTJolLSg :: DATE: 2023-12-07 :: PROFILE: Shivraj Singh Chouhan
+2023-12-11 18:27:24,996 file_cache is only supported with oauth2client<4.0.0
+2023-12-11 18:27:25,395 Refreshing due to a 401 (attempt 1/2)
+2023-12-11 18:27:25,395 Refreshing access_token
+2023-12-11 18:27:25,797 Data Fetching for channel :: UC-mapIFas3mdelo8ahpYgPA :: DATE: 2023-12-10 :: PROFILE: Vivek Tankha
+2024-02-07 17:52:08,817 file_cache is only supported with oauth2client<4.0.0
+2024-02-07 17:52:09,422 Refreshing due to a 401 (attempt 1/2)
+2024-02-07 17:52:09,422 Refreshing access_token
+2024-02-07 17:52:09,937 Data Fetching for channel :: UCMVM0aPIFiM8gcy9ijR4wJw :: DATE: 2024-02-06 :: PROFILE: ADCB
+2024-02-07 17:52:38,830 Data Fetching for channel :: UCvEhyYolfYxgPrlROsnopHw :: DATE: 2024-02-06 :: PROFILE: ADIB
+2024-02-07 17:53:12,599 Data Fetching for channel :: UCyXhrKqYwuvsvquPuqgSPrA :: DATE: 2024-02-06 :: PROFILE: First Abu Dhabi Bank (FAB)
+2024-02-07 17:53:46,616 Data Fetching for channel :: UCLVh31_N1g3VkQrTy2QAEbg :: DATE: 2024-02-06 :: PROFILE: Mashreq Bank
+2024-02-07 17:54:20,129 Data Fetching for channel :: UCUG4FKLsqj_yV1mid55AM4Q :: DATE: 2024-02-06 :: PROFILE: CBD
+2024-02-07 17:54:31,477 Data Fetching for channel :: UCecouTqjpZK0ztcWJNmr9Qg :: DATE: 2024-02-06 :: PROFILE: Citi
+2024-02-07 17:54:42,986 Data Fetching for channel :: UC0DEeXS14K4pnpDDGpwtnhg :: DATE: 2024-02-06 :: PROFILE: Dubai Islamic Bank (DIB)
+2024-02-07 17:55:06,072 Data Fetching for channel :: UCdrZqwAbeRNTTkDhZcuNQ3Q :: DATE: 2024-02-06 :: PROFILE: Emirates Islamic Bank
+2024-02-07 17:55:20,890 Data Fetching for channel :: UC11Gu7WzeYtZ4OUoV4GB34w :: DATE: 2024-02-06 :: PROFILE: Emirates NBD
+2024-02-07 17:55:54,764 Data Fetching for channel :: UC5yYfKu3AZdQMZpg_xzIEwQ :: DATE: 2024-02-06 :: PROFILE: Sharjah Islamic Bank (SIB)
+2024-02-07 17:56:15,140 Data Fetching for channel :: UCt27pLV-NXxl_pFjet5ylew :: DATE: 2024-02-06 :: PROFILE: HSBC
+2024-02-07 17:56:46,764 Data Fetching for channel :: UCg70VSOut4rA5_KFl-kMZJQ :: DATE: 2024-02-06 :: PROFILE: RAKBank
+2024-02-07 17:56:56,752 Data Fetching for channel :: UCQo6TgFj3dhZDpFVgm8_6Hg :: DATE: 2024-02-06 :: PROFILE: Standard Chartered Bank
+2024-02-07 17:57:17,126 Data Fetching for channel :: UCJh2iRDP5TdaZLCCWJVOLqQ :: DATE: 2024-02-06 :: PROFILE: Emirates Development Bank
+2024-02-07 17:57:25,621 Data Fetching for channel :: UCZQRDNEC9Qso8NXU75KmoKQ :: DATE: 2024-02-06 :: PROFILE: wio
+2024-02-07 17:57:30,030 Data Fetching for channel :: UCgUlL4rfer6SGjxAmNagYdA :: DATE: 2024-02-06 :: PROFILE: LIV Bank
+2024-02-07 17:57:43,255 Data Fetching for channel :: UCKDW8n_M2tuspsf0ZAoDHzQ :: DATE: 2024-02-06 :: PROFILE: Mashreq Neo
+2024-02-07 17:58:19,291 Data Fetching for channel :: UC0Z76QcpvkfeUxZH1BEXd5A :: DATE: 2024-02-06 :: PROFILE: YAP
